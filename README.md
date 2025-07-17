@@ -13,7 +13,7 @@ cd build/install
 Run the `configure` script located in the parent folder and specify the current path as installation prefix:
 
 ```bash
-../../configure --prefix=$(pwd)
+../../configure --prefix=$(pwd)/..
 ```
 
 > 🔧 This tells the build system to install everything (headers, libraries, etc.) **inside the `build/install` folder**.
