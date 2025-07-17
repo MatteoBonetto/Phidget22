@@ -6,3 +6,8 @@
 build/install/*
 usr/*
 *.jpg
+*.o
+*.lo
+*.so
+*.a
+*.la
