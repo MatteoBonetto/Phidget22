@@ -4,6 +4,5 @@
 
 .vscode/*
 build/install/*
-build/src/*
 usr/*
 *.jpg
