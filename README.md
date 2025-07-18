@@ -18,18 +18,11 @@ Run the `configure` script located in the parent folder and specify the current 
 
 > 🔧 This tells the build system to install everything (headers, libraries, etc.) **inside the `build/install` folder**.
 
-## 3. Compile the Library
+
+## 3. Install Locally
 
 ```bash
-make -j$(nproc)
-```
-
-> This builds the project using all available CPU cores.
-
-## 4. Install Locally
-
-```bash
-make install
+make install -j$(nproc)
 ```
 
 This will install:
