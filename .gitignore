@@ -11,3 +11,7 @@ usr/*
 *.so
 *.a
 *.la
+autom4te.cache/
+build/include/
+build/lib/
+configure~
