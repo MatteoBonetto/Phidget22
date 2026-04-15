@@ -31,4 +31,9 @@ This will install:
 
 ---
 
+## 4. Install Globally
+```bash
+../../configure --prefix=/usr/local && make && sudo make install -j$(nproc)
+```
+
 ## ✅ Done!
