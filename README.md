@@ -8,7 +8,23 @@ Navigate into the root of the repository and apply this command to go into the b
 cd build/install
 ```
 
-## 2. Run the `configure` Script with Local `--prefix`
+## 2.
+C compiler and build tools
+
+These are usually installed by a package called `build-essential`
+
+`libusb 1.0`
+
+This is generally already installed. The libusb dev files may need to
+be installed - this is usually a package called `libusb-1.0-0-dev`.
+
+```bash
+sudo apt install libusb-1.0-0-dev
+```
+
+Avahi client library
+
+## 3. Run the `configure` Script with Local `--prefix`
 
 Run the `configure` script located in the parent folder and specify the current path as installation prefix:
 
@@ -19,7 +35,7 @@ Run the `configure` script located in the parent folder and specify the current 
 > 🔧 This tells the build system to install everything (headers, libraries, etc.) **inside the `build/install` folder**.
 
 
-## 3. Install Locally
+## 4. Install Locally
 
 ```bash
 make install -j$(nproc)
@@ -31,7 +47,7 @@ This will install:
 
 ---
 
-## 4. Install Globally
+## 5. Install Globally
 ```bash
 ../../configure --prefix=/usr/local && make && sudo make install -j$(nproc)
 ```
